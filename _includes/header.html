@@ -1,0 +1,31 @@
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <nav class="main-nav" role="navigation">
+
+                    <!-- Mobile menu toggle button (hamburger/x icon) -->
+                    <input id="main-menu-state" type="checkbox" />
+                    <label class="main-menu-btn" for="main-menu-state"> <span class="main-menu-btn-icon"></span> Toggle main
+                        menu visibility </label>
+                    <h2 class="nav-brand"><a href="index.html"><img src="assets/img/main-page/logo.webp" alt="Evo Medical & Gym"
+                                                                    class="img-fluid"></a></h2>
+                    <!-- Sample menu definition -->
+                    <ul id="main-menu" class="sm sm-clean">
+                        <li class="{% if page.title == 'Home' %}last_menu{% endif %}"><a href="index.html">Acasa</a></li>
+                        <li class="{% if page.title == 'Contact' %}last_menu{% endif %}"><a href="contact-us.html">Contact</a></li>
+                        <li class="{% if page.title == 'Services' %}last_menu{% endif %}"><a href="services.html">Servicii</a></li>
+                        <li class="{% if page.title == 'About' %}last_menu{% endif %}"><a href="about.html">Despre noi</a></li>
+                        <!--li><a href="#">Pages</a>
+                            <ul>
+                                <li><a href="trainers.html">Trainers</a></li>
+                                <li><a href="coming-soon.html">Coming Soon</a></li>
+                                <li><a href="error.html">Error</a></li>
+                            </ul>
+                        </li-->
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ site.title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/img/main-page/favicon.webp" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/sm-clean.css">
+    <link rel="stylesheet" href="assets/css/sm-core-css.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+<!-- loader start -->
+<div class="page_loader">
+    <img src="assets/img/main-page/loader.svg" alt="img">
+</div>
+<!-- loader end -->
+<!-- header -->
+{% include header.html %}
+<!-- end header -->
+
+{% if page.title == 'Contact' %}
+    {% include contact-us.html %}
+{% else if page.title == 'Services' %}
+    {% include services.html %}
+{% else if page.title == 'About' %}
+    {% include about.html %}
+{% endif %}
+
+<!-- start footer section -->
+{% include footer.html %}
+<!-- start footer section -->
+
+<!-- jQuery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.smartmenus.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+name: Site CI
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      build-dir: build
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v4
+
+      - name: Upload assets artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: assets
+          path: assets
+
+      - name: Build site artifact
+        run: |
+          docker compose up jekyll-build-prod
+          pwd
+          ls -la
+          ls -la _site
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: site
+          path: _site
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: site
+          path: ${{ needs.build.outputs.build-dir }}/
+
+      - name: Download assets artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: assets
+          path: ${{ needs.build.outputs.build-dir }}/assets
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        with:
+          build_dir: ${{ needs.build.outputs.build-dir }}
+          fqdn: evofit.ro
+          jekyll: false

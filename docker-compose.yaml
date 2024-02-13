@@ -1,0 +1,35 @@
+services:
+  jekyll-new:
+    image: jekyll/jekyll:3.8.6
+    build:
+      context: .
+    volumes:
+      - .:/srv/jekyll:rw
+    command: jekyll new --force .
+  jekyll-build:
+    image: jekyll/builder:3.8.6
+    build:
+      context: .
+    volumes:
+      - .:/srv/jekyll:rw
+    command: jekyll build && rm -rf /srv/jekyll/_site/docker-compose.yaml /srv/jekyll/_site/package.json /srv/jekyll/_site/package-lock.json
+    environment:
+      JEKYLL_ENV: development
+  jekyll-build-prod:
+    image: jekyll/builder:3.8.6
+    build:
+      context: .
+    volumes:
+      - .:/srv/jekyll:rw
+    command: jekyll build && rm -rf /srv/jekyll/_site/docker-compose.yaml /srv/jekyll/_site/package.json /srv/jekyll/_site/package-lock.json
+    environment:
+      JEKYLL_ENV: production
+  jekyll-serve:
+    image: jekyll/jekyll:3.8.6
+    build:
+      context: .
+    volumes:
+      - .:/srv/jekyll:r
+    ports:
+      - 4000:4000
+    command: jekyll serve
