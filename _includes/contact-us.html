@@ -34,29 +34,35 @@
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
-                    <div class="contact-box-icons"> <img src="assets/img/inner-page/placeholder.webp" alt="address"
-                                                         class="img-fluid"> </div>
-                    <div class="contact-card">
-                        <h3>Șoseaua Cristianului 7, Brașov 500053</h3>
-                    </div>
+                    <a href="https://maps.app.goo.gl/D3DHkiDcGXauGHvN8" target="_blank">
+                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/placeholder.webp" alt="address"
+                                                             class="img-fluid"> </div>
+                        <div class="contact-card">
+                            <h3>{{ site.physical_address }}</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
-                    <div class="contact-box-icons"> <img src="assets/img/inner-page/telephone.webp" alt="phone"
-                                                         class="img-fluid"> </div>
-                    <div class="contact-card">
-                        <h3>+40 721 619 853</h3>
-                    </div>
+                    <a href="tel:{{ site.raw_phone }}" target="_blank">
+                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/telephone.webp" alt="phone"
+                                                             class="img-fluid"> </div>
+                        <div class="contact-card">
+                            <h3>{{ site.formatted_phone }}</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
-                    <div class="contact-box-icons"> <img src="assets/img/inner-page/mail.webp" alt="email" class="img-fluid">
-                    </div>
-                    <div class="contact-card">
-                        <h3>contact@evofit.ro</h3>
-                    </div>
+                    <a href="mailto:{{ site.email}}" target="_blank">
+                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/mail.webp" alt="email" class="img-fluid">
+                        </div>
+                        <div class="contact-card">
+                            <h3>{{ site.email }}</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,5 +90,5 @@
 
 <!-- start map section -->
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d366.2926100363716!2d25.559139804614095!3d45.65632610000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b00ca6186dd%3A0x4f2b9d28b6b6e66c!2s%C8%98oseaua%20Cristianului%207%2C%20Bra%C8%99ov%20500053!5e1!3m2!1sen!2sro!4v1707822452577!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.3761310233488!2d25.557650724338046!3d45.65652661747625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b35b00ca6186dd%3A0x4f2b9d28b6b6e66c!2s%C8%98oseaua%20Cristianului%207%2C%20Bra%C8%99ov%20500053!5e0!3m2!1sen!2sro!4v1707905248476!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>

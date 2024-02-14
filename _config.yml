@@ -15,12 +15,17 @@
 # in the templates via {{ site.myvariable }}.
 title: EVO Medical & Gym
 email: contact@evofit.ro
+formatted_phone: +4(072) 161-9853
+raw_phone: +40721619853
+physical_address: Șoseaua Cristianului 7, Brașov 500053
 description: >- # this means to ignore newlines until "baseurl:"
   `Partenerii Bunăstării Tale`
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://evofit.ro" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://evofit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+facebook_url: https://www.facebook.com/EvoFitBrasov
+instagram_url: https://www.instagram.com/EvoFit.Brasov
 
 # Build settings
 markdown: kramdown

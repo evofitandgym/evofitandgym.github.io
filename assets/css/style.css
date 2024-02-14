@@ -118,7 +118,7 @@ navigation bar
 */
 
 header {
-    background: rgb(177,13,201, 0.3);
+    background: rgb(0,0,0, 0.2);
 	position: absolute;
 	width: 100%;
 	top: 0;
@@ -1158,9 +1158,10 @@ footer {
 	margin-top: 140px;
 }
 .footer-logo {
+	max-width: 300px;
 	display: block;
 	text-align: center;
-	margin-top: 60px;
+	margin: 60px auto 0;
 }
 .footer-nav ul {
 	padding: 0;

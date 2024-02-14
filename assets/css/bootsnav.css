@@ -104,11 +104,9 @@
 }
 
 .nav-brand {
-  -webkit-filter: drop-shadow(5px 10px 5px #1f1815);
-  filter: drop-shadow(5px 10px 5px #1f1815);
   max-width: 200px;
   float: left;
-  margin: 0;
+  margin: 0 0 0 50px;
 }
 
 .nav-brand a {
