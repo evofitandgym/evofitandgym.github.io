@@ -21,11 +21,13 @@ physical_address: Șoseaua Cristianului 7, Brașov 500053
 description: >- # this means to ignore newlines until "baseurl:"
   `Partenerii Bunăstării Tale`
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://evofit.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://evofitandgym.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 facebook_url: https://www.facebook.com/EvoFitBrasov
 instagram_url: https://www.instagram.com/EvoFit.Brasov
+
+assets_version: 2
 
 # Build settings
 markdown: kramdown

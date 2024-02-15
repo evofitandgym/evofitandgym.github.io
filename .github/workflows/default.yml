@@ -54,5 +54,5 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         with:
           build_dir: ${{ needs.build.outputs.build-dir }}
-          fqdn: evofit.ro
+          fqdn: evofitandgym.github.io
           jekyll: false
