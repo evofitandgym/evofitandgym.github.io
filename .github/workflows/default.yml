@@ -22,12 +22,9 @@ jobs:
       - name: Build site artifact
         run: |
           docker compose up jekyll-build-prod
-          pwd
-          ls -la
-          ls -la _site
 
       - name: Upload site artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: site
           path: _site
@@ -36,7 +33,7 @@ jobs:
     needs: build
     steps:
       - name: Download site artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: site
           path: ${{ needs.build.outputs.build-dir }}/
