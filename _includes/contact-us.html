@@ -34,9 +34,22 @@
         <div class="row justify-content-center">
             <div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
+                    <a href="https://wa.me/40721619853" target="_blank">
+                        <div class="contact-box-icons">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-card">
+                            <h3>{{ site.formatted_phone }}</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-10 col-xs-12">
+                <div class="contact-box">
                     <a href="https://maps.app.goo.gl/NUgS42fiPSdKFtDZA" target="_blank">
-                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/placeholder.webp" alt="address"
-                                                             class="img-fluid"> </div>
+                        <div class="contact-box-icons">
+                            <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                        </div>
                         <div class="contact-card">
                             <h3>{{ site.physical_address }}</h3>
                         </div>
@@ -46,25 +59,27 @@
             <div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
                     <a href="tel:{{ site.raw_phone }}" target="_blank">
-                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/telephone.webp" alt="phone"
-                                                             class="img-fluid"> </div>
+                        <div class="contact-box-icons">
+                            <i class="fa fa-mobile-phone" aria-hidden="true"></i>
+                        </div>
                         <div class="contact-card">
                             <h3>{{ site.formatted_phone }}</h3>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-sm-10 col-xs-12">
+            <!--div class="col-lg-4 col-sm-10 col-xs-12">
                 <div class="contact-box">
                     <a href="mailto:{{ site.email}}" target="_blank">
-                        <div class="contact-box-icons"> <img src="/assets/img/inner-page/mail.webp" alt="email" class="img-fluid">
+                        <div class="contact-box-icons">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
                         <div class="contact-card">
                             <h3>{{ site.email }}</h3>
                         </div>
                     </a>
                 </div>
-            </div>
+            </div-->
         </div>
     </div>
 </section>

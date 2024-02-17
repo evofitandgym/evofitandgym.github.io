@@ -27,7 +27,7 @@ github_username:  jekyll
 facebook_url: https://www.facebook.com/EvoFitBrasov
 instagram_url: https://www.instagram.com/EvoFit.Brasov
 
-assets_version: 2
+assets_version: 3
 
 # Build settings
 markdown: kramdown

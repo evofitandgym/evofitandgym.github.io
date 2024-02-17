@@ -2623,24 +2623,55 @@ section.hero-contact-banner-section {
     outline: none;
     box-shadow: 0 0 15px rgb(159 93 235 / 40%);
 }
-.contact-box {
-	position: relative;
-	display: block;
-	overflow: hidden;
-	padding: 60px 0 0 0;
-}
-.contact-box:hover .contact-card {
-	box-shadow: 0 1px 8px rgba(159, 93, 235, 0.8);
-}
-.contact-box:hover .contact-box-icons {
-	background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
-	box-shadow: 0 2px 15px rgba(159, 93, 235, 0.7);
+.contact-box .contact-box-icons .fa {
+	font-size: 40px;
+	color: #9258f9;
 	transition: 0.5s all ease;
 }
+.contact-box .contact-box-icons .fa-envelope {
+	height: auto;
+	width: auto;
+	border: none;
+	line-height: normal;
+	text-align: match-parent;
+}
+.hero-header-banner-section .call-to-action-btn {
+	background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	width: 300px;
+	text-align: center;
+	display: block;
+	padding: 25px 0;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: 0.5s all ease;
+	color: #fff;
+	text-decoration: none;
+}
+
+.hero-header-banner-section .call-to-action-btn a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.contact-box {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 60px 0 0 0;
+}
+.contact-box:hover .contact-card {
+    box-shadow: 0 1px 8px rgba(159, 93, 235, 0.8);
+}
+.contact-box:hover .contact-box-icons {
+    background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+    box-shadow: 0 2px 15px rgba(159, 93, 235, 0.7);
+    transition: 0.5s all ease;
+}
 .contact-box:hover .contact-box-icons img.img-fluid {
-	filter: grayscale(1) brightness(0) invert(1) opacity(1);
-	-webkit-filter: grayscale(1) brightness(0) invert(1) opacity(1);
-	-moz-filter: grayscale(1) brightness(0) invert(1) opacity(1);
+    filter: grayscale(1) brightness(0) invert(1) opacity(1);
+    -webkit-filter: grayscale(1) brightness(0) invert(1) opacity(1);
+    -moz-filter: grayscale(1) brightness(0) invert(1) opacity(1);
 }
 /* 
 ---------------------------------------------
