@@ -330,11 +330,12 @@ li.dropdown.nav-item a:hover:after, li.dropdown.nav-item a:active:after {
 }
 .banner-img-section h1{
 	font-size:68px;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	font-weight:700;
-	background: -webkit-linear-gradient(#8e56fd, #eb7a98);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: rgb(154,223,255);
+	background: linear-gradient(to right, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, rgba(255,235,200,1) 100%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 /* 
 ---------------------------------------------
@@ -500,10 +501,10 @@ section.hero-course-banner-section {
 	line-height: 1.45;
 	text-align: center;
 	color: #322b40;
-	background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;
+	/*background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;*/
 }
 .our-courses-header h2 span {
-	color: #8e56fd;
+	color: rgba(151,214,238,1);
 }
 .our-courses-header p {
     font-size: 15px;
@@ -559,17 +560,19 @@ section.hero-courses.section {
 	transition: 0.5s all ease;
 }
 .our-courses-box:hover {
-	background-image: linear-gradient(to top, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	background: rgb(154,223,255);
+	background: linear-gradient(to bottom, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, #FFF8E1);
 	transition: 0.5s all ease;
 }
 .our-courses-box:hover .course-content h2 {
-	color: #ffffff;
+	color: black;
 }
 .our-courses-box:hover .course-content p {
-	color: #ffffff;
+	color: black;
 }
 .course-btn {
-	background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	background: rgb(154,223,255);
+	background: linear-gradient(to bottom, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, #FFF8E1);
 	width: 180px;
 	text-align: center;
 	display: block;
@@ -580,7 +583,7 @@ section.hero-courses.section {
 	color: #ffffff;
 	text-decoration: none;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px #b465d2;
+	box-shadow: 0px 0px 10px rgb(154,223,255);
 	transition: 0.5s all ease;
 }
 .course-btn:hover {
@@ -616,7 +619,7 @@ OUR TRAINERS
 	background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;
 }
 .trainer-header h1 span {
-	color: #8e56fd;
+	color: rgba(151,214,238,1);
 }
 .trainer-header p {
 	font-size: 15px;
@@ -644,8 +647,8 @@ section.hero-trainers {
 	font-size: 16px;
 	text-align: center;
 	font-weight: 600;
-	color: #ffffff;
-	background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	color: rgb(154,223,255);
+	background: linear-gradient(to bottom, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, #FFF8E1);
 	padding: 16px 39px;
 	margin: 0;
 	width: 213px;
@@ -1151,7 +1154,8 @@ footer {
 	position: relative;
 	display: block;
 	margin: 0px 0;
-	background-image: url(../img/main-page/footer-bg-img.webp);
+	background: rgb(154,223,255);
+	background: linear-gradient(to right, rgb(133, 216, 255) 21%, rgba(151,214,238,1) 32%, rgba(255,235,200,1) 100%);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1163,14 +1167,17 @@ footer {
 	text-align: center;
 	margin: 60px auto 0;
 }
+.footer-logo img {
+	filter: drop-shadow(25px 10px 25px  rgba(0, 0, 0, 1));
+}
 .footer-nav ul {
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
 	display: block;
 	margin: 30px auto;
-	border-top: 1px dashed #ffffff;
-	border-bottom: 1px dashed #ffffff;
+	border-top: 1px dashed #000;
+	border-bottom: 1px dashed #000;
 	max-width: 800px;
 }
 .footer-nav ul li {
@@ -1183,11 +1190,11 @@ footer {
 	transition: 0.5s all ease;
 }
 .footer-nav ul li a {
-	color: #ffffff;
+	color: #000;
 	text-decoration: none;
 }
 .footer-nav ul li:hover a {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 	transition: 0.5s all ease;
 }
 .footer-content p {
@@ -1195,7 +1202,7 @@ footer {
 	font-weight: 400;
 	line-height: 25px;
 	text-align: center;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(0, 0, 0, 0.8);
 	display: block;
 	width: 88%;
 	margin: 0 auto;
@@ -1204,9 +1211,9 @@ footer {
 i.fa.fa-phone {
     height: 40px;
     width: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 30px;
-    color: #fff;
+    /*color: #fff;*/
     line-height: 40px;
     font-size: 20px;
 	text-align:center;
@@ -1215,9 +1222,9 @@ i.fa.fa-phone {
 i.fa.fa-envelope {
     height: 40px;
     width: 40px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 30px;
-    color: #fff;
+    /*color: #fff;*/
     line-height: 40px;
     font-size: 15px;
 	text-align:center;
@@ -1245,13 +1252,20 @@ footer span {
     font-weight: 400;
     line-height: 25px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     margin: 0 auto;
     letter-spacing: 0.5px;
 }
 .footer-social-link ul li:hover a {
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(0,0,0,.5);
 	transition: 0.5s all ease;
+}
+.footer-social-link ul li span i {
+	color: rgba(0, 0, 0, 0.8);
+}
+.footer-social-link ul li:hover span i {
+	color: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.5);
 }
 .footer-social-link ul li span img.img-fluid {
 	padding: 12px;
@@ -1262,7 +1276,7 @@ footer span {
 	font-weight: 400;
 	line-height: 1.5;
 	text-align: left;
-	color: #ffffff;
+	color: #000;
 	margin: 0;
 }
 .footer-tag-2 ul {
@@ -1285,19 +1299,19 @@ footer span {
 	transition: 0.5s all ease;
 }
 .footer-tag-2 ul li:hover {
-	background-color: #7038b9;
-	box-shadow: 0 0 15px #9c7ae4;
+	background-color: rgba(151,214,238,.5);
+	box-shadow: 0 0 15px ;
 	transition: 0.5s all ease;
 }
 .footer-tag-2 ul li a {
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	text-decoration: none;
 }
 .bottom-line {
 	width: 100%;
 	display: block;
-	border-top: 1px solid #fff;
+	border-top: 1px solid #000;
 	margin: 10px 0;
 }
 .footer-social-link {
@@ -2560,11 +2574,11 @@ section.hero-contact-banner-section {
 	font-weight: 700;
 	line-height: 1.45;
 	text-align: center;
-	color: #322b40;
-	background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;
+	color: black;
+	/*background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;*/
 }
 .get-in-touch-title h1 span {
-	color: #8e56fd;
+	color: rgba(151,214,238,1);
 }
 .get-in-touch-title p {
 	font-size: 14px;
@@ -2586,7 +2600,7 @@ section.hero-contact-banner-section {
 .contact-card {
 	position: relative;
 	display: block;
-	box-shadow: 0 1px 8px rgba(159, 93, 235, 0.4);
+	box-shadow: 0 1px 8px rgba(151,214,238,0.4);
 	padding: 90px 50px 60px 50px;
 	border-radius: 6px;
 	margin: 10px 6px;
@@ -2613,21 +2627,25 @@ section.hero-contact-banner-section {
     padding: 0 0;
     text-align: center;
     border-radius: 50%;
-    border-top: 1px solid #9258f9;
-    border-right: 1px solid #c253db;
-    border-bottom: 1px solid #dc58c0;
-    border-left: 1px solid #e767aa;
+    border-top: 1px solid rgba(154,223,255,1);
+    border-right: 1px solid rgba(151,214,238,1);
+    border-bottom: 1px solid rgba(151,214,238,1);
+    border-left: 1px solid rgba(255,235,200,1);
     cursor: pointer;
     z-index: 2;
     margin: 20px auto;
     outline: none;
-    box-shadow: 0 0 15px rgb(159 93 235 / 40%);
+    box-shadow: 0 0 15px rgb(154 223 255 / 40%);
 }
 .contact-box .contact-box-icons .fa {
 	font-size: 40px;
-	color: #9258f9;
+	color: rgba(151,214,238,1);
 	transition: 0.5s all ease;
 }
+.contact-box:hover .contact-box-icons .fa {
+	color: #000;
+}
+
 .contact-box .contact-box-icons .fa-envelope {
 	height: auto;
 	width: auto;
@@ -2636,7 +2654,8 @@ section.hero-contact-banner-section {
 	text-align: match-parent;
 }
 .hero-header-banner-section .call-to-action-btn {
-	background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+	background: rgb(154,223,255);
+	background: linear-gradient(to right, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, rgba(255,235,200,1) 100%);
 	width: 300px;
 	text-align: center;
 	display: block;
@@ -2644,12 +2663,12 @@ section.hero-contact-banner-section {
 	cursor: pointer;
 	border-radius: 25px;
 	transition: 0.5s all ease;
-	color: #fff;
+	color: #9E9E9E;
 	text-decoration: none;
 }
 
 .hero-header-banner-section .call-to-action-btn a {
-	color: #fff;
+	color: #000000;
 	text-decoration: none;
 	font-size: 19px;
 }
@@ -2661,11 +2680,11 @@ section.hero-contact-banner-section {
     padding: 60px 0 0 0;
 }
 .contact-box:hover .contact-card {
-    box-shadow: 0 1px 8px rgba(159, 93, 235, 0.8);
+    box-shadow: 0 1px 8px rgba(151,214,238, 0.8);
 }
 .contact-box:hover .contact-box-icons {
-    background-image: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
-    box-shadow: 0 2px 15px rgba(159, 93, 235, 0.7);
+    box-shadow: 0 2px 15px rgba(154, 223, 255, 1);
+	background: linear-gradient(to right, rgba(154,223,255,.8) 21%, rgba(151,214,238,.5) 32%, rgba(255,235,200,.3) 100%);
     transition: 0.5s all ease;
 }
 .contact-box:hover .contact-box-icons img.img-fluid {

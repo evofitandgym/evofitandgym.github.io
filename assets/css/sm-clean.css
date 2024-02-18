@@ -15,7 +15,7 @@
   text-decoration: none;
 }
 .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active{
-	color:#9258f9;
+	color: #05114f;
 	transition: all ease 0.5s 0s;
 }	
 .sm-clean a.current {
@@ -25,7 +25,7 @@
   color: #bbbbbb;
 }
 .sm-clean a.active{
-  color: #9258f9;
+  color: #05114f;
 }
 .sm-clean a .sub-arrow {
   position: absolute;
@@ -144,11 +144,11 @@
     border-radius: 0 !important;
   }
   .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
-    color: #9258f9;
+    color: #05114f;
 	transition:all ease 0.5s 0s;
   }
   .sm-clean a.current {
-    color: #9258f9;
+    color: #05114f;
 	transition:all ease 0.5s 0s;
   }
   .sm-clean a.disabled {

@@ -234,14 +234,19 @@
   }
 }
 li.last_menu {
-    background: linear-gradient(to right, #9258f9, #c253db, #dc58c0, #e767aa, #e8799b);
+    background: rgb(154,223,255);
+    background: linear-gradient(to right, rgba(154,223,255,1) 21%, rgba(151,214,238,1) 32%, rgba(255,235,200,1) 100%);
 	transition:all ease 0.5s 0s;
     border-radius: 40px;
     margin-left: 20px !important;
+    color: black;
 }
 li.last_menu:hover{
     background-color: #fff;
 	transition:all ease 0.5s 0s;
     border-radius: 40px;
     margin-left: 20px !important;
+}
+li.last_menu a {
+    color: black;
 }
