@@ -16,7 +16,9 @@
     {% include contact-us.html %}
 {% else if page.title == 'Services' %}
     {% include services.html %}
-{% endif
+{% else if page.title == 'Pricing' %}
+    {% include pricing.html %}
+{% endif %}
 
 <!-- start footer section -->
 {% include footer.html %}
