@@ -382,6 +382,15 @@ start header banner
 	color: #fff;
 	text-decoration: none;
 }
+
+.hero-section {
+	margin: 80px 0;
+}
+
+.hero-section .accordion-body {
+	background-color: #fff;
+}
+
 .hero-header-banner-section .content-section p {
 	display: block;
 	margin: 20px auto;
@@ -2569,7 +2578,7 @@ section.hero-contact-banner-section {
 	background-position: center;
 	padding: 11% 0;
 }
-.get-in-touch-title h1 {
+.get-in-touch-title h1, .pricing-header h1 {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.45;
@@ -2577,7 +2586,7 @@ section.hero-contact-banner-section {
 	color: black;
 	/*background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;*/
 }
-.get-in-touch-title h1 span {
+.get-in-touch-title h1 span, .pricing-header h1 span {
 	color: rgba(151,214,238,1);
 }
 .get-in-touch-title p {

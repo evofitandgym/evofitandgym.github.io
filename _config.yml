@@ -35,6 +35,12 @@ markdown: kramdown
 collections:
   procedures:
     output: false
+  packages:
+    output: false
+  snacks:
+    output: false
+  epilations:
+    output: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

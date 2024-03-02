@@ -12,13 +12,15 @@
 <!-- header -->
 {% include header.html %}
 <!-- end header -->
-{% if page.title == 'Contact Us' %}
-    {% include contact-us.html %}
-{% else if page.title == 'Services' %}
-    {% include services.html %}
-{% else if page.title == 'Pricing' %}
-    {% include pricing.html %}
-{% endif %}
+
+{% case page.title %}
+    {% when "Contact Us" %}
+        {% include contact-us.html %}
+    {% when "Pricing" %}
+        {% include pricing.html %}
+    {% when "Services" %}
+        {% include services.html %}
+{% endcase %}
 
 <!-- start footer section -->
 {% include footer.html %}

@@ -1,5 +1,6 @@
 ---
-procedure: kinetoterapie individuală
+name: KINETOTERAPIE INDIVIDUALA
 option: 1 ședință
-price: 100RON
+price: 100 RON
+booking-link: https://wa.me/40721619853?text=Bun%C4%83%2C+sunt+interesat%C4%83+de+procedura+%22KINETOTERAPIE+INDIVIDUALA+1+%C8%99edin%C8%9B%C4%83+100+RON%22 
 ---
