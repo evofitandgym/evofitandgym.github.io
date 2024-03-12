@@ -12,59 +12,30 @@
                 <div class="accordion" id="pricing-accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-package" aria-expanded="true" aria-controls="pricing-package">
-                                Pachete Promotionale
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-medical" aria-expanded="true" aria-controls="pricing-medical">
+                                Medical
                             </button>
                         </h2>
-                        <div id="pricing-package" class="accordion-collapse collapse show" data-bs-parent="#pricing-accordion">
+                        <div id="pricing-medical" class="accordion-collapse collapse show" data-bs-parent="#pricing-medical">
                             <div class="accordion-body">
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <th scope="col">Pachete</th>
+                                        <th scope="col">Procedura</th>
+                                        <th scope="col">Sed</th>
                                         <th scope="col">Preț</th>
                                         <th scope="col">&nbsp;</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for package in site.packages %}
+                                    {% for procedure in site.procedures %}
                                     <tr>
-                                        <td>{{ package.name }}</td>
-                                        <td>{{ package.price }}</td>
-                                        <td><a href="{{ package.booking-link}}" target="_blank" class="btn btn-success">Rezervați Acum</a></td>
+                                        <td>{{ procedure.name }}</td>
+                                        <td>{{ procedure.option }}</td>
+                                        <td>{{ procedure.price }}</td>
+                                        <td><a href="{{ procedure.booking-link}}" target="_blank" class="btn btn-success">Rezervați Acum</a></td>
                                     </tr>
                                     {% endfor %}
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-therapy" aria-expanded="false" aria-controls="pricing-therapy">
-                                Sănătate Corporală
-                            </button>
-                        </h2>
-                        <div id="pricing-therapy" class="accordion-collapse collapse" data-bs-parent="#pricing-accordion">
-                            <div class="accordion-body">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th scope="col">Procedure</th>
-                                        <th scope="col">Ședințe/timp</th>
-                                        <th scope="col">Preț</th>
-                                        <th scope="col">&nbsp;</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                        {% for procedure in site.procedures %}
-                                            <tr>
-                                                <td>{{ procedure.name }}</td>
-                                                <td>{{ procedure.option }}</td>
-                                                <td>{{ procedure.price }}</td>
-                                                <td><a href="{{ procedure.booking-link }}" target="_blank" class="btn btn-success">Rezervați Acum</a></td>
-                                            </tr>
-                                        {% endfor %}
                                     </tbody>
                                 </table>
                             </div>
