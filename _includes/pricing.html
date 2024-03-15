@@ -22,19 +22,33 @@
                                     <thead>
                                     <tr>
                                         <th scope="col">Procedura</th>
-                                        <th scope="col">Sed</th>
-                                        <th scope="col">Preț</th>
-                                        <th scope="col">&nbsp;</th>
+                                        <th scope="col">Rezervația</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     {% for procedure in site.medical %}
-                                    <tr>
-                                        <td>{{ procedure.name }}</td>
-                                        <td>{{ procedure.option }}</td>
-                                        <td>{{ procedure.price }}</td>
-                                        <td><a href="{{ procedure.booking-link}}" target="_blank" class="btn btn-success">Rezervați Acum</a></td>
-                                    </tr>
+                                        <tr>
+                                            <td>{{ procedure.name }}</td>
+                                            <td>
+                                                {% if procedure.options.size > 1 %}
+                                                    <div class="dropdown">
+                                                        <a class="btn btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Rezervați Acum
+                                                        </a>
+
+                                                        <ul class="dropdown-menu">
+                                                            {% for option in procedure.options %}
+                                                                {% capture booking_message %}Bună, sunt interesată de medical procedura "{{procedure.name}} {{option.name}} {{option.price}}"{% endcapture %}
+                                                                <li><a class="btn btn-success dropdown-item" target="_blank" href="https://wa.me/{{ site.raw_phone }}?text={{ booking_message | url_encode }}">{{option.price}} - {{option.name}}</a></li>
+                                                            {% endfor %}
+                                                        </ul>
+                                                    </div>
+                                                {% else %}
+                                                    {% assign option = procedure.options[0] %}
+                                                    <a class="btn btn-success" target="_blank" href="https://wa.me/{{ site.raw_phone }}?text={{ booking_message | url_encode }}">Rezervați Acum - {{option.price}}</a>
+                                                {% endif %}
+                                            </td>
+                                        </tr>
                                     {% endfor %}
                                     </tbody>
                                 </table>
