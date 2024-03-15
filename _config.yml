@@ -33,7 +33,7 @@ assets_version: 3
 markdown: kramdown
 
 collections:
-  procedures:
+  medical:
     output: false
   packages:
     output: false
