@@ -19,6 +19,18 @@
     <meta name="twitter:description" content="Partenerii Bunăstării Tale">
     <meta name="twitter:image" content="/assets/img/main-page/active-kineto-and-recovery.svg?v={{ site.assets_version }}">
 
+    {% if jekyll.environment == 'production' %}
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HDD1M406DK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-HDD1M406DK');
+        </script>
+    {% endif %}
+
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/main-page/favicon/apple-touch-icon.png?v={{ site.assets_version }}">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/main-page/favicon/favicon-32x32.png?={{ site.assets_version }}">
     <link rel="manifest" href="/assets/img/main-page/favicon/site.webmanifest?v={{ site.assets_version }}">
