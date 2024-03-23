@@ -12,11 +12,35 @@
                 <div class="accordion" id="pricing-accordion">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-medical" aria-expanded="true" aria-controls="pricing-medical">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-gym" aria-expanded="true" aria-controls="pricing-gym">
+                                Gym
+                            </button>
+                        </h2>
+                        <div id="pricing-gym" class="accordion-collapse collapse show" data-bs-parent="#pricing-accordion">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <tbody>
+                                    {% for package in site.gym %}
+                                        {% capture booking_message %}Bună, sunt interesată de gym pachet "{{package.name}} {{package.quantity1}} {{package.quantity2}} {{ package.price }}"{% endcapture %}
+                                        <tr>
+                                            <td>{{ package.name }}</td>
+                                            <td>{{ package.quantity1 }}</td>
+                                            <td>{{ package.quantity2 }}</td>
+                                            <td><a class="btn btn-success" target="_blank" href="https://wa.me/{{ site.raw_phone }}?text={{ booking_message | url_encode }}">Rezervați Acum - {{package.price}}</a></td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-medical" aria-expanded="false" aria-controls="pricing-medical">
                                 Medical
                             </button>
                         </h2>
-                        <div id="pricing-medical" class="accordion-collapse collapse show" data-bs-parent="#pricing-medical">
+                        <div id="pricing-medical" class="accordion-collapse collapse" data-bs-parent="#pricing-accordion">
                             <div class="accordion-body">
                                 <table class="table">
                                     <thead>
@@ -55,19 +79,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-beauty" aria-expanded="false" aria-controls="collapseTwo">
-                                Epilare Definitivă
-                            </button>
-                        </h2>
-                        <div id="pricing-beauty" class="accordion-collapse collapse" data-bs-parent="#pricing-accordion">
-                            <div class="accordion-body">
-                                <table class="table">
-                                </table>
-                            </div>
-                        </div>
-                    </div-->
                 </div>
             </div>
         </div>
