@@ -20,7 +20,8 @@
                             <div class="accordion-body">
                                 <table class="table">
                                     <tbody>
-                                    {% for package in site.gym %}
+                                    {% assign gym_packages = site.gym | sort: 'key' %}
+                                    {% for package in gym_packages %}
                                         {% capture booking_message %}Bună, sunt interesată de gym pachet "{{package.name}} {{package.quantity1}} {{package.quantity2}} {{ package.price }}"{% endcapture %}
                                         <tr>
                                             <td>{{ package.name }}</td>
@@ -50,7 +51,8 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {% for procedure in site.medical %}
+                                    {% assign medical_procedures = site.medical | sort: 'key' %}
+                                    {% for procedure in medical_procedures %}
                                         <tr>
                                             <td>{{ procedure.name }}</td>
                                             <td>

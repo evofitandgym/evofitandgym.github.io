@@ -1,4 +1,5 @@
 ---
+key: d
 name: Electroterapie (3 tipuri de curenți)
 options:
   - name: 5 ședințe (30 min.)

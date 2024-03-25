@@ -1,4 +1,5 @@
 ---
+key: q
 name: Plan Alimentar + Cântărire Metabolică
 options:
   - name: 

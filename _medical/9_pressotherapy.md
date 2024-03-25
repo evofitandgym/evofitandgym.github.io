@@ -1,4 +1,5 @@
 ---
+key: i
 name: Presoterapie
 options:
   - name: 1 ședință (30 min.)

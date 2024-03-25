@@ -1,4 +1,5 @@
 ---
+key: k
 name: Terapie Tecar
 options:
   - name: 1 ședință

@@ -1,4 +1,5 @@
 ---
+key: p
 name: Laserterapie (10 min.)
 options:
   - name: 1 ședință

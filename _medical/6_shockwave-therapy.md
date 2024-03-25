@@ -1,4 +1,5 @@
 ---
+key: f
 name: Terapie Shockwave
 options:
   - name: 1 ședință
