@@ -908,9 +908,6 @@ div#myBtnContainer .btn:focus {
 	box-shadow: none;
 	border-radius: 25px;
 }
-.btn:hover {
-	background-color: #ddd;
-}
 div#myBtnContainer .btn.active {
 	background-color: #d84cc7;
 	color: white;
@@ -2578,7 +2575,7 @@ section.hero-contact-banner-section {
 	background-position: center;
 	padding: 11% 0;
 }
-.get-in-touch-title h1, .pricing-header h1 {
+h1.section-header {
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 1.45;
@@ -2586,7 +2583,7 @@ section.hero-contact-banner-section {
 	color: black;
 	/*background: url(../img/main-page/trainers-line-img.webp) center bottom / 200px no-repeat;*/
 }
-.get-in-touch-title h1 span, .pricing-header h1 span {
+h1.section-header span {
 	color: rgba(151,214,238,1);
 }
 .get-in-touch-title p {

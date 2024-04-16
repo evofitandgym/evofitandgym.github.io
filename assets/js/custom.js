@@ -326,3 +326,12 @@ $(function() {
     });
   }
 });
+
+// init clipboardjs
+$(function() {
+    new ClipboardJS('.btn-clipboard-copy', {
+        text: function(trigger) {
+            return "evomedicalgym";
+        }
+    });
+})
