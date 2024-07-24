@@ -97,7 +97,7 @@
                                     <tbody>
                                         {% assign beauty_item = site.beauty | sort: 'key' %}
                                         {% for item in beauty_item %}
-                                            {% capture booking_message %}Bună, sunt interesată de "{{ item.type }} {{item.name}} {{ package.price }}"{% endcapture %}
+                                            {% capture booking_message %}Bună, sunt interesată de "{{ item.type }} {{item.name}} {{ item.price }}"{% endcapture %}
                                             <tr>
                                                 <td>{{ item.type }} - {{ item.name }}</td>
                                                 <td><a class="btn btn-success" target="_blank" href="https://wa.me/{{ site.beauty_raw_phone }}?text={{ booking_message | url_encode }}">Rezervați Acum - {{item.price}}</a></td>
