@@ -17,6 +17,7 @@ title: EVO Medical & Gym
 email: contact@evofit.ro
 formatted_phone: 0 (721) 619 853
 raw_phone: 40721619853
+beauty_raw_phone: 40727963381
 physical_address: Șoseaua Cristianului 7, Brașov 500053
 description: >- # this means to ignore newlines until "baseurl:"
   `Partenerii Bunăstării Tale`
@@ -37,11 +38,7 @@ collections:
     output: false
   medical:
     output: false
-  packages:
-    output: false
-  snacks:
-    output: false
-  epilations:
+  beauty:
     output: false
 
 # Exclude from processing.

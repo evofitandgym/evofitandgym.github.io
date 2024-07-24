@@ -79,6 +79,35 @@
                             </div>
                         </div>
                     </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pricing-beauty" aria-expanded="false" aria-controls="pricing-medical">
+                                Beauty
+                            </button>
+                        </h2>
+                        <div id="pricing-beauty" class="accordion-collapse collapse" data-bs-parent="#pricing-accordion">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Procedura</th>
+                                        <th scope="col">Fă-ți o programare</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% assign beauty_item = site.beauty | sort: 'key' %}
+                                        {% for item in beauty_item %}
+                                            {% capture booking_message %}Bună, sunt interesată de "{{ item.type }} {{item.name}} {{ package.price }}"{% endcapture %}
+                                            <tr>
+                                                <td>{{ item.type }} - {{ item.name }}</td>
+                                                <td><a class="btn btn-success" target="_blank" href="https://wa.me/{{ site.beauty_raw_phone }}?text={{ booking_message | url_encode }}">Rezervați Acum - {{item.price}}</a></td>
+                                            </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
