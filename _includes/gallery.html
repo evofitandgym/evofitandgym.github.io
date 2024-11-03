@@ -1,0 +1,27 @@
+<section class="hero-section section">
+    <div class="container">
+        <div id="gallery" class="carousel slide" data-bs-ride="carousel">
+            {% assign gallery = site.static_files | where_exp: "item", "item.path contains 'assets/img/gallery'" %}
+            <div class="carousel-indicators">
+                {% for image in gallery %}
+                <button type="button" data-bs-target="#gallery" data-bs-slide-to="{{ forloop.index0 }}"{% if forloop.first %} class="active" aria-current="true"{% endif %}></button>
+                {% endfor %}
+            </div>
+            <div class="carousel-inner">
+                {% for image in gallery %}
+                <div class="carousel-item {% if forloop.first %} active{% endif %}">
+                    <img src="{{image.path}}" class="img-fluid">
+                </div>
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gallery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gallery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
